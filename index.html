@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jane Doe - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Colin Kavanagh
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          jdoe@jeemail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764598
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src= "html_finalprojimages\pfp.jpg" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Colin Kavanagh!
+          </h1>
+          <p>
+            I am a Cognitive Science Machine Learning major at the University of California San Diego.
+            I am very interested in applying Artificial Intelligence models to various business applications,
+            and will probably get my MBA sometime after undergrad. 
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      
+
+      <div class="all_skills">
+
+        <div class="skill">
+          <img src="html_finalprojimages\Python-logo-notext.svg.png"/>
+          <h6>Python</h6>
+          <p>6 years experience</p>
+        </div>  
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        
+
+        <div class="skill">
+          <img src="html_finalprojimages\Tensorflow.png"/>
+          <h6>TensorFlow</h6>
+          <p>1 year experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages\274px-Pandas_mark.svg.png"/>
+          <h6>Pandas</h6>
+          <p>3 years experience</p>
+        </div> 
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Pawsitive Outcomes: Machine Learning for Shelter Cat Predictions</h3>
+            <ul>
+              <li> Liaised with animal shelters in Long Beach, CA, to collect data on 17k cats</li>
+              <li> Performed statistical tests on data for feature analysis on 15 different variables.</li>
+              <li> Built AI model in Scikit-Learn and Numpy using logistic regression to predict whether a cat in the shelter would face a 
+                “good” or “bad” outcome.</li>
+              <li> Analyzed performance metrics like ROC-AUC and F-Scores to evaluate model performance.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Sandy Spring Adventure Park: Command.io</h3>
+            <ul>
+              <li>Collected, wrangled, and cleaned a dataset of over 56k data points of 5 years’ worth of park reservation data.</li>
+              <li> Developed a supervised machine learning algorithm using Scikit-Learn to identify patterns, trends, and seasonality in daily 
+                visitor numbers on nine variables.</li>
+              <li>Continuously refined and improved the AI model by incorporating feedback and data from actual customer walk-ins during 
+                the summer, resulting in a prediction accuracy of 97%</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Sweep: The first pet Roomba</h3>
+            <ul>
+              <li> Collaborated with a former US Air Force Academy Instructor to develop a Raspberry Pi program that allows a Roomba to 
+                interact with the environment and people like a robotic pet.
+                </li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Colin is an exceptional software engineer! His coding prowess and problem-solving skills are unmatched. A true asset to any team!
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I highly recommend Colin for his dedication and meticulous attention to detail. His innovative solutions consistently exceed expectations.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Colin's collaborative nature and adaptability make him a standout developer. His positive attitude and technical acumen inspire the entire team.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Just Monika.</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
